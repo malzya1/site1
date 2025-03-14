@@ -12,12 +12,20 @@
 
 header{
         height: 100px;
-        background-color: rgba(255, 255, 255, 0.805);
+        background-color: white;
         display:flex;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 50px;
 }
 
+.img{
+    
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+
+}
 
 .nav {
   display: flex;
@@ -25,6 +33,7 @@ header{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   width: 100%;
   padding: 0 50px;
+  margin-top: 25px;
 }
 .nav h1, .nav a {
   margin: 0;
@@ -38,7 +47,7 @@ header{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 main{
-        background-color:rgb(243, 243, 243);
+        background-color:white;
         height:auto;
 }
 h1{
@@ -48,6 +57,7 @@ h1{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size:34pt;
         padding-top: 0px;
+        
 }
            
 .h1 main{
@@ -65,44 +75,163 @@ div.news{
             display:flex;
             text-align: left;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-           font-size: 25px;
+            font-size: 25px;
+            margin-bottom: 20px;
                
                
 }
-div.news1{
-            padding:1%;
+
+
+div.text{
+    padding:1%;
             margin:1% 2%;
             background-color: white;
             display:flex;
             text-align: left;
-            font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 25px;
+            margin-bottom: 20px;
+}
+
+div.text1{
+    padding:1%;
+            margin:1% 2%;
+            background-color: white;
+            display:flex;
+            text-align: left;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            margin-bottom: 20px;
+}
+
+
+div.news1{
+    padding:1%;
+    margin:1% 2%;
+    background-color: white;
+    display:flex;
+    text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    
+            
                
                
 }
+div.news2{
+    padding:1%;
+    margin:1% 2%;
+    background-color: white;
+    display:flex;
+    text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    
+            
+               
+               
+}
+
+
 a.button {
     padding:20px;
     padding: 7px 9px;
-    border: 5px outset rgb(219, 19, 203);
+    border: 5px outset #7339cb;;
     border-radius:20px;
-    color: rgb(234, 18, 220);
-    background-color: rgb(255, 255, 255);
+    color: #7339cb;;
+    background-color: white;
     text-decoration: none;
     width:20%;
     text-align:center;
     display:block;
 }
-.img{
-    
-    justify-content: center;
-    align-items: center;
-    display: block;
-    margin: 0 auto;
 
+a.button1 {
+    padding:5px;
+    padding: 7px 9px;
+    border: 5px outset rgb(255, 255, 255);
+    border-radius:25px;
+    color: rgb(255, 255, 255);
+    background-color: #7339cb;
+    text-decoration: none;
+    width:10%;
+    height: 35%;
+    text-align:center;
+    display:block;
+    font-size: 25px;
 }
 
 
+.container {
+  text-align: center; /* Центрирование содержимого (опционально) */
+}
 
+.container figure {
+  display: inline-block;
+  width: 350px;  /* Задайте ширину, подходящую для ваших картинок и описаний */
+  margin: 50px; /* Отступы между элементами */
+  text-align: left; /* Центрирование текста внутри figure (опционально) */
+}
+
+.container img {
+  width: 100%;  /* Картинки занимают всю ширину figure */
+  height: auto;  /* Сохранение пропорций */
+  display: block; /* Убирает нежелательный пробел снизу */
+}
+
+.container figcaption{
+
+    color:#7339cb;
+    font-size: 30px;  /* Размер шрифта для описания */
+    margin-top: 10px;  /* Отступ между картинкой и описанием */
+}
+
+
+.container1 {
+  text-align: center; /* Центрирование содержимого (опционально) */
+}
+
+.container1 figure {
+  display: inline-block;
+  width: 350px;  /* Задайте ширину, подходящую для ваших картинок и описаний */
+  margin: 50px; /* Отступы между элементами */
+  text-align: center; /* Центрирование текста внутри figure (опционально) */
+}
+
+.container1 img {
+  width: 100%;  /* Картинки занимают всю ширину figure */
+  height: auto;  /* Сохранение пропорций */
+  display: block; /* Убирает нежелательный пробел снизу */
+}
+
+.container1 figcaption{
+
+    color:#7339cb;
+    font-size: 40px;  /* Размер шрифта для описания */
+    margin-top: 10px;  /* Отступ между картинкой и описанием */
+}
+
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0 50px;
+  align-items: center;
+  margin-top: 25px;
+  width: 500px; /* Задайте ширину контейнера */
+   
+  margin: 0 auto; /* Это центрирует контейнер по горизонтали */
+  
+}
+.nav1 a {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  color: #7339cb;
+  font-size: 30px;
+  text-align: center;
+}
 
 
 
@@ -116,6 +245,7 @@ a.button {
         <a href="#">Геймеры</a>
         <a href="#">Стримы</a>
         <a href="#">О нас</a>
+        <a href="#" class="button1">ГЛАВНАЯ</a>
         <section class="text-image-section"></section>
         </div>
     </header>
@@ -132,33 +262,96 @@ a.button {
                 </div>
                 <img src="img/twitch.png" width = '300' height="300" class = 'img'>
             </div>
-               
-            <div class="news1">
+
+            <div class="text">
                 <div>
-                <h1>Популярные категории</h1>
-                    <p></p>
+                    <h1>Популярные категории</h1> 
                 </div>
-                <img src="v1.jpg">
+                
             </div>
-           
-            <div class="news">
-              <div>
-                <h1>Популярные стримеры</h1>
-                     <p></p>
-                </div>
-                <img src="v1.jpg">
-            </div>
-           
+
+            
             <div class="news1">
-                <img src="v1.jpg">
-                <div>
-                    <h1>Заголовок</h1>
-                    <p>текст</p>
+                
+                
+                <div class="container">
+                    <figure>
+                        <img src="img/logo.jpg" alt = ''>
+                        <figcaption> Общение </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/logo.jpg" alt = ''>
+                        <figcaption> IRL </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/logo.jpg" alt = ''>
+                        <figcaption> Counter - Strike </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/logo.jpg" alt = ''>
+                        <figcaption> Grand Theft Auto V </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/logo.jpg" alt = ''>
+                        <figcaption> MInecraft </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/logo.jpg" alt = ''>
+                        <figcaption> The Last of Us Part I </figcaption>
+                    </figure>
+
+                    
+                    
+                    
+                    
                 </div>
+            </div>
+                
+            <div class="text1">
+                <div>
+                    <h1>Популярные стримеры</h1> 
+                </div>
+                    
+            </div>    
+
+            
+            <div class="news2">
+                <div class="container1">
+                    <figure>
+                        <img src="img/logo.jpg" alt = ''>
+                        
+                    </figure>
+
+                    <figure>
+                        <img src="img/logo.jpg" alt = ''>
+                        <figcaption>И МНОГИЕ ДРУГИЕ</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/logo.jpg" alt = ''>
+                        
+                    </figure>
+                </div>
+           </div>
+            
+           <div class="news3">
+                
                
             </div>
     </main>
-   
+   <footer>
+        <div class="nav1">
+            <a href="#">FAQ</a>
+            <a href="#">ПОДДЕРЖКА</a>
+           
+            
+        </div>
+   </footer>
    
 
 
