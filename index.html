@@ -11,7 +11,9 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-anchor: none;
 }
+
 
 a {
   text-decoration: none; /* Убираем подчеркивание по умолчанию */
@@ -24,7 +26,7 @@ header{
         height: 100px;
         background-color: white;
         display:flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: monospace;
         font-size: 50px;
 }
 
@@ -37,24 +39,32 @@ header{
 
 }
 
+.image-container {
+    margin: 1% 1%;
+    display: grid;
+    grid-template-columns: auto auto; /* Две колонки */
+  /* grid-auto-flow: column;  Альтернативный вариант (если количество картинок неизвестно) */
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: monospace;
   width: 100%;
   padding: 0 50px;
   margin-top: 25px;
 }
 .nav h2, .nav a {
-  margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0 auto;
+  font-family: monospace;
   text-decoration: none;
   color: #7339cb;
   font-size: 30px;
+  text-align: center;
 }
 .nav h2 {
-  font-size: 40px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+  font-family: monospace;
   
 }
 h2:hover{
@@ -77,68 +87,77 @@ main{
 h1{
         
         color:rgb(219, 19, 203);
-        margin:0;
-        text-align:left;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size:34pt;
+        margin:0 auto;
+        text-align:center;
+        font-family: monospace;
+        font-size:35px;
         padding-top: 0px;
+        
+}
+
+div.hz{
+        color:rgb(219, 19, 203);
+        margin: 0% 40%;
+        text-align:center;
+        font-family: monospace;
+        font-size:34pt;
         
 }
 
            
 .h1 main{
             font: size 34pt;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin:0;
+            font-family:monospace;
+            margin:0 auto;
             color:rgb(224, 19, 197);
             padding-top:10px;
-            text-align:left;
+            text-align:center;
             transition-duration:300ms;
 }
 div.news{
             padding:1%;
-            margin:1% 2%;
+            margin:0 auto;
             background-color: white;
             display:flex;
-            text-align: left;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            font-family:monospace;
             font-size: 35px;
-            margin-bottom: 150px;
+            margin-bottom: 100px;
                
                
 }
 
 
 div.text{
-    padding:1%;
-            margin:1% 2%;
+            padding: 1%;
+            margin:1% 40%;
             background-color: white;
             display:flex;
-            text-align: left;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            font-family:monospace;
             font-size: 25px;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
 }
 
 div.text1{
-    padding:1%;
-            margin:1% 2%;
+            padding: 1%;
+            margin:1% 40%;
             background-color: white;
             display:flex;
-            text-align: left;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            font-family:monospace;
             font-size: 25px;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
 }
 
 
 div.news1{
     padding:1%;
-    margin:1% 2%;
+    margin: 0 auto;
     background-color: white;
     display:flex;
-    text-align: left;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-family:monospace;
     font-size: 25px;
     
             
@@ -147,12 +166,25 @@ div.news1{
 }
 div.news2{
     padding:1%;
-    margin:1% 2%;
+    margin:0 auto;
     background-color: white;
     display:flex;
-    text-align: left;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-family:monospace;
     font-size: 25px;
+    
+            
+               
+               
+}
+div.news5{
+    margin-top: 150px;
+    padding:5%;
+    background-color: white;
+    display:flex;
+    text-align: center;
+    font-family:monospace;
+    font-size: 40px;
     
             
                
@@ -161,8 +193,21 @@ div.news2{
 
 div.news3
 {
+    margin-top: 20px;
     background-color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family:monospace;
+    color:#7339cb;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+div.news6
+{
+    padding: 5%;
+    margin-top: 60px;
+    background-color: white;
+    font-family:monospace;
     color:#7339cb;
     font-size: 25px;
     align-items: center;
@@ -178,9 +223,10 @@ a.button {
     color: #7339cb;;
     background-color: white;
     text-decoration: none;
-    width:20%;
+    width: 10%;;
     text-align:center;
     display:block;
+    margin: 0 auto;
 }
 
 a.button1 {
@@ -270,7 +316,7 @@ a.button2 {
 .nav1 {
   display: flex;
   justify-content: space-between;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: monospace;
   padding: 0 50px;
   align-items: center;
   margin-top: 25px;
@@ -281,7 +327,7 @@ a.button2 {
 }
 .nav1 a {
   margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: monospace;
   text-decoration: none;
   color: #7339cb;
   font-size: 30px;
@@ -296,11 +342,11 @@ a.button2 {
     <header>
         <div class="nav">
         <h2>TWITCH</h2>
-        <a href="#">Поддержка</a>
+        <a href="#section3">Визуальные элементы</a>
         <a href="#section2">Стримеры</a>
         <a href="#section1">Стримы</a>
         <a href="#">О нас</a>
-        <a href="#" class="button1">ГЛАВНАЯ</a>
+        <a href="#section4" class="button1">ГЛАВНАЯ</a>
         <section class="text-image-section"></section>
         </div>
     </header>
@@ -309,13 +355,13 @@ a.button2 {
        
             <div class="news">
                 <div>
-                <h1>What is that?</h1>
+                <h1 id = 'section4'>What is that?</h1>
                     <p>Twitch — видеостриминговый сервис, специализирующийся<br> на тематике компьютерных игр, в том числе трансляциях<br> геймплея и киберспортивных турниров.
                         Видео на платформе Twitch<br> можно просматривать как в реальном времени, так и по запросу.<br></p>
                         <a href="https://twitch.com" class="button">КЛИК</a>
                         
                 </div>
-                <img src="img/twitch.png" width = '300' height="300" class = 'img'>
+                <img src="img/twitch.png" width = '450' height="450" class = 'img'>
             </div>
 
             <div class="text">
@@ -450,6 +496,30 @@ a.button2 {
                         
                
             </div>
+
+
+            <div class="news5">
+                <div>
+                <h1>Преимущества для зрителей</h1>
+                    <p>Возможность общения с любимыми стримерами, доступ к<br> эксклюзивному контенту,обширное сообщество.</p>
+                        
+                </div>
+                <img src="img/какашка.png" width = '800' height="300" class = 'img'>
+            </div>
+
+            <div class = 'hz'>
+                <div>
+                    <h1 id = 'section3'>Визуальные элементы</h1>
+                </div>
+                
+            </div>
+
+            <div class = 'image-container'>
+                        <img src="img/1.png" width = '1200' height="700" class = 'img'>
+                        <img src="img/2.png" width = '1200' height="700" class = 'img'>
+            </div>
+                
+
     </main>
 
 
